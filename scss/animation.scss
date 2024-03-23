@@ -1,0 +1,212 @@
+// ANIMATION //
+
+.story h2::after {
+    content: url("../assets/images/Sunflower.png");
+    position: absolute;
+    left: 0.7em;
+    top: 6em;
+    animation: rotate-flower var(--rotate) linear infinite;
+    width: 154px;
+    height: 154px;
+  }
+  
+  .story__article::after {
+    content: url("../assets/images/Hibiscus.png");
+    position: absolute;
+    animation: rotate-flower var(--rotate) linear infinite;
+    width: 188px;
+    height: 188px;
+  }
+  
+  #studio h2::before {
+    content: url("../assets/images/random_flower.png");
+    position: absolute;
+    animation: rotate-flower var(--rotate) linear infinite;
+    left: -1em;
+    top: 0;
+    width: 205px;
+    height: 205px;
+  }
+  
+  .site-footer::before {
+    content: url("../assets/images/Sunflower.png");
+    position: absolute;
+    left: 4em;
+    top: 0em;
+    animation: rotate-flower var(--rotate) linear infinite;
+    width: 154px;
+    height: 154px;
+  }
+  
+  #studio h2::after {
+    content: url("../assets/images/flower.png");
+    position: absolute;
+    right: 1em;
+    top: 1.2em;
+    animation: rotate-flower var(--rotate) linear infinite;
+    width: 110px;
+    height: 110px;
+  }
+  
+  .site-footer::after {
+    content: url("../assets/images/orchid.png");
+    position: absolute;
+    right: -4em;
+    bottom: 7.8em;
+    animation: rotate-flower var(--rotate) linear infinite;
+    width: 154px;
+    height: 154px;
+  }
+  
+  .site-footer ul::after {
+    content: url("../assets/images/hibiscus_footer.png");
+    position: absolute;
+    left: calc(50% - 323px);
+    bottom: -28.5em;
+    z-index: -1;
+    animation: rotate-flower var(--rotate) linear infinite;
+  }
+  
+  .up {
+    animation: up 2s 300ms both;
+  }
+  
+  .bannerlogo {
+    position: sticky;
+    top: 80px;
+    z-index: 10;
+    opacity: 1;
+    animation: move-up 2s 300ms both, float 3s 1s infinite ease-in-out;
+    margin-top: 35px !important;
+  }
+  
+  .bannerbackground,
+  .bannervideo {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    min-width: 1440px !important;
+    animation: move-down 2s 300ms both;
+  }
+  
+  .animationh1 {
+    animation: animationh1 1s 1s forwards;
+  }
+  
+  #place .place_big_cloud {
+    transform: translateX(var(--posX));
+    height: 122px;
+    top: 70px;
+    right: 90px;
+  }
+  
+  #place .place_little_cloud {
+    height: 55px;
+    top: 250px;
+    right: 500px;
+    transform: translateX(var(--posX));
+  }
+  
+  .menu_burger .line {
+    height: 2px;
+    background-color: #000;
+    display: block;
+    width: 100%;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .menu_burger.close .line:first-child {
+    transform: rotate(45deg) translate3d(8px, 6px, 0);
+  }
+  
+  .menu_burger.close span.line:last-child {
+    transform: rotate(-45deg) translate3d(8px, -6px, 0);
+  }
+  
+  .menu_content--story::before {
+    content: url("../assets/images/Chat-bleu.png");
+    position: absolute;
+    right: 20em;
+    bottom: -3em;
+    animation: float 7s 100ms infinite ease-in-out;
+  }
+  
+  .menu_content--place::before {
+    content: url("../assets/images/Chat-noir.png");
+    position: absolute;
+    left: 20em;
+    top: -4em;
+    animation: float 6s 200ms infinite ease-in-out;
+  }
+  
+  .menu_content--footer::before {
+    content: url("../assets/images/Chat-roux.png");
+    position: absolute;
+    right: 30em;
+    bottom: 0;
+    animation: float 5s 300ms infinite ease-in-out;
+  }
+  
+  .menu_content::after {
+    content: url("../assets/images/orchid.png");
+    position: absolute;
+    left: -4em;
+    top: 3em;
+    transform: scale(0.8);
+    animation: rotate-flower var(--rotate) linear infinite;
+  }
+  
+  .menu_content--story::after {
+    content: url("../assets/images/Sunflower.png");
+    position: absolute;
+    left: 24em;
+    bottom: 0em;
+    animation: rotate-flower var(--rotate) linear infinite;
+  }
+  
+  .menu_content--characters::after {
+    content: url("../assets/images/random_flower.png");
+    position: absolute;
+    left: 54em;
+    top: -2em;
+    transform: scale(0.3);
+    animation: rotate-flower var(--rotate) linear infinite;
+  }
+  
+  .menu_content--place::after {
+    content: url("../assets/images/flower.png");
+    position: absolute;
+    right: 28em;
+    top: -2em;
+    transform: scale(0.5);
+    animation: rotate-flower var(--rotate) linear infinite;
+  }
+  
+  .menu_content--footer::after {
+    content: url("../assets/images/hibiscus_footer.png");
+    position: absolute;
+    left: 500px;
+    bottom: -23.5em;
+    animation: rotate-flower var(--rotate) linear infinite;
+  }
+  
+  .Oscar_title h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 3.2rem;
+    text-align: left;
+  }
+  
+  .section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+  }

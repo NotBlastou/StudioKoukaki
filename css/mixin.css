@@ -1,0 +1,27 @@
+.nomination-oscar-title {
+  opacity: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  transition: opacity 2s ease-out 1s, transform 2s ease-out 1s, visibility 2s ease-out 1s;
+  position: absolute;
+  bottom: 100px;
+}
+.nomination-oscar-title.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.animated-section {
+  opacity: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  transition: opacity 2s ease-out 1s, transform 2s ease-out 1s, visibility 2s ease-out 1s;
+}
+.animated-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/*# sourceMappingURL=mixin.css.map */

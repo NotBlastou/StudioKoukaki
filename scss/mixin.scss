@@ -1,0 +1,26 @@
+// MIXIN // 
+
+
+@mixin fade-in-up($duration: 4s, $delay: 0s) {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: opacity $duration ease-out $delay,
+      transform $duration ease-out $delay, visibility $duration ease-out $delay;
+  
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
+  }
+  
+  .nomination-oscar-title {
+    @include fade-in-up(2s, 1s);
+    position: absolute;
+    bottom: 100px;
+  }
+  
+  .animated-section {
+    @include fade-in-up(2s, 1s);
+  }

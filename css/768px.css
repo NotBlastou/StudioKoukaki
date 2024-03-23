@@ -1,0 +1,109 @@
+@media only screen and (width: 768px) {
+  .story__article::after {
+    display: none;
+  }
+  video {
+    display: none;
+  }
+  .banner img {
+    position: absolute !important;
+    width: 30%;
+    margin-top: unset !important;
+  }
+  .bannerbackground,
+  .bannervideo {
+    position: absolute !important;
+    bottom: unset !important;
+    left: unset !important;
+    min-width: unset !important;
+    animation: unset !important;
+    width: 100% !important;
+  }
+  .bannerlogo {
+    position: absolute !important;
+    top: unset !important;
+    z-index: unset !important;
+    opacity: 1;
+    animation: move-up 2s 300ms both, float 3s 1s infinite ease-in-out;
+    margin-top: unset !important;
+  }
+  .banner {
+    position: relative;
+    object-fit: contain;
+    height: 269px !important;
+    background-image: none;
+  }
+  .story h2::after {
+    display: none;
+  }
+  .story #characters {
+    margin: unset !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .story > h2 span,
+  .studio > h2 span,
+  #characters span,
+  #place span {
+    position: absolute;
+    color: #fff5e9;
+    opacity: 0;
+    z-index: 4;
+    font-size: 55%;
+  }
+  .fix2 {
+    top: 100px;
+    position: absolute;
+    opacity: 0;
+    z-index: 4;
+    font-size: 50%;
+  }
+  #studio h2::before {
+    display: none;
+  }
+  #studio h2::after {
+    display: none;
+  }
+  .site-footer::before {
+    display: none;
+  }
+  .site-footer::after {
+    display: none;
+  }
+  .nomination-oscar-title.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    font-size: 155%;
+    width: 80%;
+    height: 100%;
+    top: 200px;
+    left: 75px;
+  }
+  .main-navigation {
+    height: 80px;
+  }
+  .menu_content::after {
+    display: none;
+  }
+  .menu_content--story::before {
+    display: none;
+  }
+  .menu_content--story::after {
+    display: none;
+  }
+  .menu_content--story::after {
+    display: none;
+  }
+  .menu_content--story::after {
+    display: none;
+  }
+  .menu_content--place::before {
+    display: none;
+  }
+  .menu_content--place::after {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=768px.css.map */
